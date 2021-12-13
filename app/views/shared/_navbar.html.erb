@@ -1,0 +1,36 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <%= link_to new_booking_path, class: "navbar-brand" do %>
+      <%= image_tag "https://key0.cc/images/preview/82146_555d9978032fd693ec4c64d487bc76b5.png" %>
+    <% end %>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <%# if user_signed_in? %>
+          <li class="nav-item active">
+            <%= link_to "Home", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Messages", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item dropdown">
+            <%= image_tag "https://previews.dropbox.com/p/thumb/ABa-N_MoTl7XrQhQsJ0p1eLg5zgfpNg5sBq8fPP2nKawZnfTICLci0dkR3dJKs5OiXNR6mWMJuRlqK7d6nMXJOb8uHW7jURMR5wqY7SRLIKGihznJjD6vPXbY_tzolraJogqUwU5O8IADjwwjOcz1mXReZVlTaV_vKd3Rg0xF0qY-r6LgmI8XWi07f5yCBlRx_UgeLHvrsKNsdKV1DNw0IgfJprH_9gKBLdOH1pnub-v8uZzvmf6YsVyTS4clr7maFEhgJc288-G6B6gVikYLPv65leqBxu4cAREiyhP6HhPCC4v4ThP_M1MHIs__J82BUAcDL4RWIiL_fw7TlAVzAYO05B-zZ366IvrYMe6kkQqkXsgA7UlvnHWCic5Q_sPYxpZSRiBgosBJo35kW9clsyJzOlodfCEA1R7pqb2VDirbw/p.jpeg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <%= link_to "Action", "#", class: "dropdown-item" %>
+              <%= link_to "Another action", "#", class: "dropdown-item" %>
+              <%= link_to "Log out", "#", method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+        <%# else %>
+          <%# <li class="nav-item"> %>
+            <%#= link_to "Login", "#", class: "nav-link" %>
+          <%# </li> %>
+        <%# end %>
+      </ul>
+    </div>
+  </div>
+</div>
