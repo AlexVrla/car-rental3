@@ -1,0 +1,11 @@
+<ul>
+  <% @cars.each do |car| %>
+   <% if car.rental_status == 'available' %>
+    <li>
+      <%= car.brand %>
+      <%= car.model %>
+      <%= car.price_per_day %>€/day
+    </li>
+   <% end %>
+  <% end %>
+</ul>
